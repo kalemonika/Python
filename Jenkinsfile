@@ -7,9 +7,10 @@ pipeline {
         sh 'python3 --version'
       }
     }
-    stage('hello') {
+    stage('TEST') {
       steps {
-        sh 'python3 hello.py'
+        sh 'python3 test.py'
+        sh 'python3 tset1.py'
       }
     }
   }
