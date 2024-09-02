@@ -2,16 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('checkout') {
+        stage('Version') {
             steps {
-                https://github.com/kalemonika/Python.git
+                sh 'python3 Version'
             }
         }
         
-        stage('RUN FILE') {
+        stage('RUN PYTHON FILE') {
             steps {
                 
-                sh 'mvn test'
+                 sh 'python3 test2.py'
             }
         }
         
