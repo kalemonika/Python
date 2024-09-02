@@ -9,8 +9,8 @@ pipeline {
     }
     stage('TEST') {
       steps {
-        sh 'python3 test.py'
-        sh 'python3 tset1.py'
+        sh 'python test.py'
+        sh 'python tset1.py'
       }
     }
   }
