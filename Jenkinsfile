@@ -1,21 +1,15 @@
 pipeline {
     agent any
-
     stages {
-        stage('Version') {
+        stage('version') {
             steps {
-                sh 'python3 Version'
+                bat 'python --version'
             }
         }
-        
-        stage('RUN PYTHON FILE') {
+        stage('hello') {
             steps {
-                
-                 sh 'python3 test2.py'
+                bat 'python test.py'
             }
         }
-        
-        
     }
 }
-
