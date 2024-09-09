@@ -6,9 +6,15 @@ pipeline {
                 bat 'python --version'
             }
         }
-        stage('hello') {
+        stage('First Program') {
             steps {
                 bat 'python test.py'
+            }
+        }
+
+        stage('Second Program') {
+            steps {
+                bat 'python test2.py'
             }
         }
     }
